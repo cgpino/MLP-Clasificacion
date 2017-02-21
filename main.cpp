@@ -238,7 +238,7 @@ int main(int argc, char **argv) {
     	std::cout << " Semilla <" << semillas[i] << ">" << std::endl;
     	std::cout << "**************" << std::endl;
 
-    	// Se ejecuta el algoritmo en línea y se obtienen los errores de train y test
+    	// Se ejecuta el algoritmo y se obtienen los errores de train y test
         mlp.ejecutarAlgoritmo(pDatosTrain,pDatosTest,ivalue,erroresTrain[i],erroresTest[i],ccrsTrain[i],ccrsTest[i],fvalue);
     	std::cout << "\n # Finalizado => CCR de test final: " << ccrsTest[i] << std::endl;
         //std::cout << "\n # Finalizado => Error de test final: " << erroresTest[i] << std::endl;
