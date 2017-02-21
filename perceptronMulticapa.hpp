@@ -3,9 +3,8 @@
  * Date  : 2016
  *********************************************************************/
 
-
-#ifndef _PERCEPTRONMULTICAPA_H_
-#define _PERCEPTRONMULTICAPA_H_
+#ifndef _PERCEPTRONMULTICAPA_HPP_
+#define _PERCEPTRONMULTICAPA_HPP_
 
 namespace imc {
 
@@ -135,8 +134,8 @@ public:
 	}
 
 	// Reservar memoria para las estructuras de datos
-    // nl tiene el numero de capas y npl es un vector que contiene el número de neuronas por cada una de las capas
-    // Rellenar vector Capa* pCapas
+	// nl tiene el numero de capas y npl es un vector que contiene el número de neuronas por cada una de las capas
+	// Rellenar vector Capa* pCapas
 	int inicializar(const int &nl, const std::vector<int> &npl, const bool &bSigmoideCapaSalida);
 
 	// Leer una matriz de datos a partir de un nombre de fichero y devolverla
@@ -154,8 +153,8 @@ public:
 	void entrenar(Datos* pDatosTrain, const int &funcionError);
 
 	// Ejecutar el algoritmo de entrenamiento durante un número de iteraciones, utilizando pDatosTrain
-    // Una vez terminado, probar como funciona la red en pDatosTest
-    // Tanto el error MSE de entrenamiento como el error MSE de test debe calcularse y almacenarse en errorTrain y errorTest
+	// Una vez terminado, probar como funciona la red en pDatosTest
+	// Tanto el error MSE de entrenamiento como el error MSE de test debe calcularse y almacenarse en errorTrain y errorTest
 	// funcionError=1 => EntropiaCruzada // funcionError=0 => MSE
 	void ejecutarAlgoritmo(Datos * pDatosTrain, Datos * pDatosTest, const int &maxiter, double &errorTrain, double &errorTest, double &ccrTrain, double &ccrTest, const int &funcionError);
 
