@@ -1,5 +1,5 @@
 /*********************************************************************
- * File  : PerceptronMulticapa.cpp
+ * File  : perceptronMulticapa.cpp
  * Date  : 2016
  *********************************************************************/
 
@@ -14,7 +14,7 @@
 #include <time.h>
 
 // Inclusión del archivo de cabecera de PerceptrónMulticapa
-#include "PerceptronMulticapa.h"
+#include "perceptronMulticapa.hpp"
 
 // ------------------------------
 // Obtener un número entero aleatorio en el intervalo [Low,High]

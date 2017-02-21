@@ -1,6 +1,6 @@
 //============================================================================
 // Introducción a los Modelos Computacionales
-// Name        : mlpClasificacion.cpp
+// Name        : MLP-Classification
 // Author      : Carlos Gómez Pino
 // Version     : 2016
 // Copyright   : Universidad de Córdoba
@@ -17,13 +17,13 @@
 #include <vector>
 
 // Inclusión de la clase PerceptrónMulticapa
-#include "imc/PerceptronMulticapa.h"
+#include "perceptronMulticapa.hpp"
 
 int main(int argc, char **argv) {
 
     /* Valores de entrada del programa */
 
-	// Indican si se han proporcionado datos de entrenamiento y/o test
+    // Indican si se han proporcionado datos de entrenamiento y/o test
     bool tflag = false, Tflag = false;
 
     // Indican el nombre de los ficheros de entrenamiento y test
